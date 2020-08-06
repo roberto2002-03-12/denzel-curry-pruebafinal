@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/codigo.js"></script>
+</head>
+<body>
+    <div class="container-fluid"> <!--primer contenedor-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!--navbar-dark: cuando es de color negro el fondo, se va a ver blanco-->
+            <h1 class="navbar-brand" ><font size="6">Denzel Curry</font></h1> <!--use font para cambiar el tamaño de letra, ya que en css no me dejaba-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="boton">
+              <span class="navbar-toggler-icon" id="botonicon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><font color="white" size="4">Home</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index2.html"><font color="white" size="4">Playlist</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index3.html"><font color="white" size="4">Contrato</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://denzel-curry-12032002.blogspot.com/" target="_blank"><font color="white" size="4">Blog</font></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div id="background-img" class="d-none d-sm-none d-md-none d-lg-block"> <!--Fondo de el slider de color negro-->
+            <div class="slider"> <!--Creación de animación de imagen-->
+                <ul align="center"> <!--Lista de imagenes-->
+                    <li><img src="img/Denzel1.jpg" alt=""></li> <!--Imagen: 1280x720-->
+                    <li><img src="img/Denzel2.jpg" alt=""></li>
+                    <li><img src="img/Denzel3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="fondo-texto">
+        <br><br> <br> 
+        <div class="row"> <!--quien es?-->
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12" id="quienes">
+                <h2>¿Quién es?</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet quia placeat quis alias <br>
+                   inventore dolore expedita quibusdam possimus, eum, officia, suscipit cum aspernatur commodi rem <br>
+                   voluptates vel consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in <br>
+                   doloremque ex rem minus ipsa alias distinctio saepe vel, enim sequi nisi qui! Officiis, aliquam <br>
+                   nisi! Maiores enim ab nemo?</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 d-none d-sm-none d-md-none d-lg-block" id="Denzelpic1">
+                <!--d-none: usa esto primero para activarlo
+                    d-sm-none: cuando lo ves en celular no se ve la imagen, lo mismo va para md que es tablet
+                    d-lg-block: a partir de acá se va poder ver, o sea, solamente en lg y xl se va poder ver-->
+                <img src="img/Denzel1pic.jpg" alt="">
+            </div>
+        </div>
+        <br> <br>
+        <div class="row" id="famoso"> <!--por qué es tan famoso?-->
+            <div class="col-xl-4 col-lg-4 d-none d-sm-none d-md-none d-lg-block" id="Denzelpic2">
+                <img src="img/Denzel2pic.jpg" alt="">
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12" align="right"> 
+            <!--align="right": use esto para alinear el p a la derehca, quería centrarlo en su bloque pero no deja, solo funciona p no h2-->
+                <h2>¿Por qué es tan famoso?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet quia placeat quis alias <br>
+                   inventore dolore expedita quibusdam possimus, eum, officia, suscipit cum aspernatur commodi rem <br>
+                   voluptates vel consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in <br>
+                   doloremque ex rem minus ipsa alias distinctio saepe vel, enim sequi nisi qui! Officiis, aliquam <br>
+                   nisi! Maiores enim ab nemo?</p>
+            </div>
+        </div>
+        <br> <br>
+        <div class="row"> <!--el mejor de la nueva escuela?-->
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12" id="elmejor">
+                <h2>¿El mejor de la nueva escuela?</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet quia placeat quis alias <br>
+                   inventore dolore expedita quibusdam possimus, eum, officia, suscipit cum aspernatur commodi rem <br>
+                   voluptates vel consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in <br>
+                   doloremque ex rem minus ipsa alias distinctio saepe vel, enim sequi nisi qui! Officiis, aliquam <br>
+                   nisi! Maiores enim ab nemo?</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 d-none d-sm-none d-md-none d-lg-block" id="Denzelpic1">
+                <img src="img/Denzel3pic.jpg" alt="">
+            </div>
+        </div>
+        <br> <br> <!--a partir de acá es equipo y records-->
+        <h2 align="center">Records</h2>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-md-4">
+                        <div class="card text-center border-dark">
+                            <div class="card">
+                                <h3>Streams</h3>
+                                <img src="img2/alza.png" alt="" height="100px" width="100px" id="alza">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, <br> 
+                                    adipisicing elit. Cupiditate quidem <br> 
+                                    maxime minima dicta id, odit soluta <br> 
+                                    vero officia non eveniet. Consequatur <br> 
+                                    iste odit quisquam at earum quis <br> 
+                                    corporis sapiente consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center border-dark">
+                            <div class="card">
+                                <h3>Lirica</h3>
+                                <img src="img2/lirica.png" alt="" height="100px" width="100px" id="lirica">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, <br> 
+                                    adipisicing elit. Cupiditate quidem <br> 
+                                    maxime minima dicta id, odit soluta <br> 
+                                    vero officia non eveniet. Consequatur <br> 
+                                    iste odit quisquam at earum quis <br> 
+                                    corporis sapiente consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center border-dark">
+                            <div class="card">
+                                <h3>Ventas</h3>
+                                <img src="img2/dinero.png" alt="" height="100px" width="100px" id="dinero">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, <br> 
+                                    adipisicing elit. Cupiditate quidem <br> 
+                                    maxime minima dicta id, odit soluta <br> 
+                                    vero officia non eveniet. Consequatur <br> 
+                                    iste odit quisquam at earum quis <br> 
+                                    corporis sapiente consequuntur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+
+        <section class="text-center" id="equipo">
+            <div class="container p-5">
+                <h2 class="text-white">Equipo de Producción</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dicta beatae corrupti eos, quas architecto sint doloribus.</p>
+
+                <div class="row">
+                    <!--miembros-->
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img2/persona.png" class="w-50 img-fluid rounded-circle">
+                                <h3>Lyrical Lemonade</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                                    dolor sit amet consectetur adipisicing elit consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img2/persona.png" class="w-50 img-fluid rounded-circle">
+                                <h3>Kenny Beats' Productions</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                                    dolor sit amet consectetur adipisicing elit consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img2/persona.png" class="w-50 img-fluid rounded-circle">
+                                <h3>Tay Keith's Productions</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                                    dolor sit amet consectetur adipisicing elit consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img2/persona.png" class="w-50 img-fluid rounded-circle">
+                                <h3>Loma Vista Recordings</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                                   dolor sit amet consectetur adipisicing elit consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+
+        <h2 align="center">Social media</h2>
+
+        <div class="row" align="center">
+            <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-6">
+                <a href="https://www.facebook.com/ultimatedenzelcurry/" target="_blank"><img src="img2/facebook.png" alt="facebook" height="100px" width="100px"></a>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-6">
+                <a href="https://www.instagram.com/denzelcurryph/?hl=es-la" target="_blank"><img src="img2/Instagram.png" alt="Instagram" height="100px" width="100px"></a>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-6">
+                <a href="https://open.spotify.com/artist/6fxyWrfmjcbj5d12gXeiNV" target="_blank"><img src="img2/Spotify.png" alt="Spotify" height="100px" width="100px"></a>
+            </div> <!---->
+            <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-6">
+                <a href="https://www.youtube.com/user/DENZELCURRYPH" target="_blank"><img src="img2/Youtube.png" alt="Youtube" height="100px" width="100px"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

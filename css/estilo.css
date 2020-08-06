@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Barra navegadora*/
+
+nav{
+    background-color: black;
+}
+
+nav h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+nav a:hover{/*hover: al pasar el mouse realice una acción, en este caso que cambie de color*/
+    background-color: orange;
+}
+
+nav a{
+    color: white;
+}
+
+/*Imagen slider*/
+
+#background-img {
+    background-color: black;
+    width: 100%;
+}
+
+.slider {
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: cambio 20s infinite;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 80%;
+}
+
+@keyframes cambio { /*animación de movimiento*/
+    0% {margin-left: 0;} /*primera imagen*/
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;} /*segunda imagen*/
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;} /*tercera imagen*/
+    70% {margin-left: -200%;}
+}
+
+/*texto simple e imagenes simples*/
+
+#fondo-texto {
+    background-color: whitesmoke;
+}
+
+h2{
+    font-size: 40px;
+}
+
+/*¿Quien es?*/
+
+#Denzelpic1 img{
+    margin-left: 45px;
+    border: solid 2px black;
+}
+
+/*¿Por qué es tan famoso?*/
+
+#famoso h2{
+    float: right;
+}
+
+#famoso p{
+    float: right;
+}
+
+#Denzelpic2 img{
+    margin-left: 65px;
+    border: solid 2px black;
+}
+
+/*records*/
+
+/*imagenes de cartas*/
+#dinero{
+    margin-left: 95px;
+}
+
+#lirica{
+    margin-left: 105px;
+}
+
+#alza{
+    margin-left: 95px;
+}
+
+/*correción de imagenes en otros portatiles*/
+/*COL*/
+@media(max-width: 575px){
+    #dinero{
+        margin-left: 110px;
+    }
+    #lirica{
+        margin-left: 115px;
+    }
+    #alza{
+        margin-left: 115px;
+    }
+}
+
+/*SM*/
+@media(min-width: 576px) and (max-width: 767px){
+    #dinero{
+        margin-left: 135px;
+    }
+    #lirica{
+        margin-left: 145px;
+    }
+    #alza{
+        margin-left: 135px;
+    }
+}
+
+/*MD*/
+
+@media(min-width: 768px) and (max-width: 991px){
+    #dinero{
+        margin-left: 30px;
+    }
+    #lirica{
+        margin-left: 40px;
+    }
+    #alza{
+        margin-left: 30px;
+    }
+}
+
+/*LG*/
+
+@media(min-width: 992px) and (max-width: 1199px){
+    #dinero{
+        margin-left: 70px;
+    }
+    #lirica{
+        margin-left: 80px;
+    }
+    #alza{
+        margin-left: 70px;
+    }
+}
+
+/*equipo*/
+
+#equipo{
+    background-color: black;
+}

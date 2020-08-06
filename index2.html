@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo2.css">
+    <script type="text/javascript" src="js/codigo.js"></script>
+</head>
+<body>
+    <div class="container-fluid"> <!--primer contenedor-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!--navbar-dark: cuando es de color negro el fondo, se va a ver blanco-->
+            <h1 class="navbar-brand" ><font size="6">Denzel Curry</font></h1> <!--use font para cambiar el tamaño de letra, ya que en css no me dejaba-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="boton">
+              <span class="navbar-toggler-icon" id="botonicon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><font color="white" size="4">Home</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index2.html"><font color="white" size="4">Playlist</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index3.html"><font color="white" size="4">Contrato</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://denzel-curry-12032002.blogspot.com/" target="_blank"><font color="white" size="4">Blog</font></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div id="background-img"> 
+            <div id="video" align="center" class="d-none d-sm-none d-md-none d-lg-block">
+                <video src="video/Speedboat.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="fondo">
+        <br> <br> <br>
+        <h2 align="center">Canciones más escuchadas</h2>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/Clout.jpg" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - CLOUT COBAIN</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Pre-Chorus] <br>
+                                I just wanna feel myself, you want me to kill myself <br>
+                                Man, I been on my own, Lord, I'ma need some help <br>
+                                I just wanna feel myself, you want me to kill myself <br>
+                                Man, it's been so damn long, dealing with the things I've felt <br>
+
+                                [Chorus] <br>
+                                Suicidal doors, call it Kurt Cobain <br>
+                                Suwoo leather seats, like a bloody stain <br>
+                                I need hella bass, I need hella pain <br>
+                                You gon' wanna cry, I'ma make it rain <br>
+                                Suicidal doors, call it Kurt Cobain <br>
+                                Suwoo leather seats, like a bloody stain <br>
+                                I need hella bass, I need hella pain <br> 
+                                You gon' wanna cry, I'ma make it rain <br>
+
+                                [Verse 1] <br>
+                                I don't even know what to feel, they don't even know what's real <br>
+                                Dry tears with a dollar bill, I'm out tryna make a mill', oh <br>
+                                Why you wanna take my soul? I'm yelling out, "Hell no!" <br>
+                                I can't even trust my friends, most of them might be foes <br>
+                                Watch these hoes when they say they want a lot of me <br>
+                                I don't know who's the one that wanna plot on me <br>
+                                I stay low so my demons don't acknowledge me <br>
+                                When I go, I know death don't do apologies
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Clout.mp3" controls></audio>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/Speedboat.jpg" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - Speedboat</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Quita show en class="collapse-show" también cambia los números para que no se tome como el primero, es decir, no de be haber dos heading two-->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Intro: J NICS] <br>
+                                I went from stickin' pennies in the jar to offshore bank accounts <br>
+                                See me and my conglomerates is lucrative <br>
+                                I'm talkin' big money, big chains, big guns, nigga <br>
+                                More power <br>
+
+                                [Chorus] <br>
+                                Big talk, speedboat (Speedboat) <br>
+                                Pray to God I don't get repoed (Repoed) <br>
+                                Didn't go to college for a free throw (Swish) <br>
+                                People gettin' killed through the peephole (Blah) <br>
+                                Have your money up before you go to war (Hmm) <br>
+                                Put the mask on like a luchador (Hmm) <br>
+                                My dawg didn't make it to 21, so I gotta make it past 24 <br>
+                                Big talk, speedboat (Speedboat) <br>
+                                Pray to God I don't get repoed (Repoed) <br>
+                                Didn't go to college for a free throw (Swish) <br>
+                                People gettin' killed through the peephole (Blah) <br>
+                                Have your money up before you go to war (Hmm) <br>
+                                Put the mask on like a luchador (Hmm) <br>
+                                My dawg didn't make it to 21, so I gotta make it past 24 <br>
+
+                                [Verse 1] <br>
+                                Put a red beam to your head like Arby's <br>
+                                Either go to school, go to jail or the army <br>
+                                Keep a close eye on the things tryna harm me <br>
+                                Warn me if anybody try to swarm me, uh <br>
+                                Invest in the rock and a Rottweiler <br>
+                                Pile up hella stacks when the bills pile up <br>
+                                Dollar is the only way to get the style up <br>
+                                Riled up, catchin' motherfuckers usin' dial-up <br>
+                                My dawg is gone and the result is to have my teflon <br>
+                                Christian Dior and the fashion beyond <br>
+                                Talkin' Polo, call me Polow da Don <br>
+                                Throw some D's on the donk <br>
+                                I got hella keys and the funk <br>
+                                I put hella Gs in the vault <br>
+                                It took only three to assault, damn
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Speedboat.mp3" controls></audio>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/ult.png" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - ULT</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Quita show en class="collapse-show" también cambia los números para que no se tome como el primero, es decir, no de be haber dos heading two-->
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Verse 1] <br>
+                                This is the wrath of Aquarius <br>
+                                I am the black metal terrorist, ain't no comparison <br>
+                                Humanitarian, bitch I'm a veteran <br>
+                                Better than anyone comprehend <br>
+                                Snake in the grass, cut the copperhead <br>
+                                Hollow-tips point at a copper' head <br>
+                                Drop a head, popping the Glock till the copper dead <br>
+                                But Bishop killed Radames <br>
+                                That is the biggest hypocrisy <br>
+                                I don't see nobody stopping me <br>
+                                Boy, your whole life is a mockery <br>
+                                A militant mind of the million <br>
+                                Civilian, I am the realest, bitch <br>
+                                No Gilligan put me on an island <br>
+                                Smoking on an island 'til a nigga look Thailand <br> 
+                                Spread through your crew like a motherfucking virus <br>
+                                Cloud 9 confederate, breaking up barriers <br>
+                                Federation in your area <br>
+                                If I'm a bitch then I guess you a pussy, and pussies are scared of a terrier (WOOF) <br>
+                                Run all your paper, killer Curry keep on catching the caper <br>
+                                Dominating common denominator <br>
+                                Aftermath you can just do the math later, as a teenager <br>
+                                I was an underdog under the Raiders, valuable player <br>
+                                Young Bo Jackson slammin' packs with a passion <br>
+                                Satisfaction with the lack of compassion <br>
+                                It's a maverick hella gaspin', but actually <br>
+                                I am that nigga entirely <br>
+                                The same ones that inspire me be the same ones that wanna retire me, nigga
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Ult.mp3" controls></audio>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/Sumo.jpg" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - Sumo</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Quita show en class="collapse-show" también cambia los números para que no se tome como el primero, es decir, no de be haber dos heading two-->
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Intro] <br>
+                                Ayy, okay, okay <br>
+                                G-G-G-Good work, Charlie <br>
+
+                                [Chorus] <br>
+                                Pockets too big, they sumo (What?) <br>
+                                Pull a nigga card like Uno (Hoo) <br>
+                                Flip a nigga shit like Judo (Huh?) <br>
+                                You niggas act too culo (Culo) <br>
+                                You a nerd, no Chad Hugo (Hoo) <br>
+                                Pockets too big, they sumo (Hoo) <br>
+                                Pockets too big, they sumo (Yeah) <br>
+                                Pockets too big, they sumo (Hoo) <br>
+                                Pockets too big, they sumo (What?) <br>
+                                Pull a nigga card like Uno (Yeah) <br>
+                                Flip a nigga shit like Judo (Yeah) <br>
+                                You niggas act too culo (Culo) <br>
+                                You a nerd, no Chad Hugo (Hugo) <br>
+                                Pockets too big, they sumo (Hoo) <br>
+                                Pockets too big, they sumo (What?) <br>
+                                Pockets too big, they sumo (Yeah) <br>
+
+                                [Verse 1] <br>
+                                Pockets too big, they sumo<br>
+                                Tell me who the hottest motherfucker that you know<br>
+                                If it ain't me, you a puto<br>
+                                Curry get the flame, call a nigga Prince Zuko (Ah, yeah)<br>
+                                Swimming through the money like a flounder, hold up (Yeah)<br>
+                                I just want the knowledge and the power, hold up (Yeah)<br>
+                                Why these niggas lookin' at me sour? (Uh)<br>
+                                Chopper eat a nigga like Chowder (Yeah)<br>
+                                Rada-rada-rada-rada-rada (Okay)<br>
+                                Never gave a fuck about a dollar (Okay)<br>
+                                Mo' money mean more problems (Okay)<br>
+                                Pray for me to fall like Autumn (Uh)<br>
+                                'Cause I got it on my own with no help, mane (Uh)<br>
+                                Got a bag then invested in myself, mane (Uh)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Sumo.mp3" controls></audio>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/ultimate.jpg" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - Ultimate</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Quita show en class="collapse-show" también cambia los números para que no se tome como el primero, es decir, no de be haber dos heading two-->
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Chorus] <br>
+                                I am the one, don't weigh a ton <br>
+                                Don't need a gun to get respect up on the street (Okay) <br>
+                                Under the sun, the bastard son<br>
+                                Will pop the Glock to feed himself and family (Sheesh)<br>
+                                By any means, your enemies, my enemies<br>
+                                We wet them up like a canteen (Damn)<br>
+                                The yellow tape surrounds the fate<br>
+                                Don't have a face, so now you late, open the gates (God damn)<br>
+
+                                [Verse 1]<br>
+                                Great, eliminate like ElimiDate (Ooh)<br>
+                                Hey, young boy had to penetrate (Ooh)<br>
+                                Face, young boy done caught a case (Ooh)<br>
+                                Bang, now his mama livin' with the pain (Uh)<br>
+                                Wait, doctor says he's gonna stay (Huh?)<br>
+                                Let him get the Senzu Bean so he regenerate (Oh)<br>
+                                Now a nigga harder than the head of the state (damn)<br>
+                                Denzel Curry is the new candidate (Damn)<br>
+                                Ultimate, alternate, you are the opposite<br>
+                                Stop this shit, chop your esophagus (Esophagus)<br>
+                                Bitches be boppin' it, bow down and pop it in<br>
+                                Droppin' it in her esophagus (Esophagus)<br>
+                                She get so nasty, in public she classy<br>
+                                Perhaps she is able to swallow it (Uh)<br>
+                                Girl, I can make you a star (Star, ooh)<br>
+                                Then I put her ass on Apollo, bitch (Damn)<br>
+                                Bitch, I am ultimate, behold my awesomeness<br>
+                                Narcissist, part time an arsonist (Flame)<br>
+                                Rippin' through cartilage, I am the hardest, bitch<br>
+                                Wrap it up, put in sarcophagus (Damn)<br>
+                                Dearly departed, it's done when it started<br>
+                                So now that I'm livin' so harmonious (Harmonious)<br>
+                                Feelin' like Spartacus, Curry the ultimate<br>
+                                I am the best, there's no politics<br>
+                                Bitch, I'm ultimate<br>
+                                Ultimate<br>
+                                Bitch, I'm<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Ultimate.mp3" controls></audio>
+            </div>
+        </div>
+        <br>
+        <h2 align="center">Mi favorita</h2><br>
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" align="center">
+                <img src="img3/Sick.jpg" alt="" width="150px" height="150px"> 
+                <br> <p>Denzel Curry - Sick and Tired</p> 
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" id="lyrics">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Lyrics
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Quita show en class="collapse-show" también cambia los números para que no se tome como el primero, es decir, no de be haber dos heading two-->
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                [Chorus] <br>
+                                I am the one, don't weigh a ton <br>
+                                Don't need a gun to get respect up on the street (Okay) <br>
+                                Under the sun, the bastard son<br>
+                                Will pop the Glock to feed himself and family (Sheesh)<br>
+                                By any means, your enemies, my enemies<br>
+                                We wet them up like a canteen (Damn)<br>
+                                The yellow tape surrounds the fate<br>
+                                Don't have a face, so now you late, open the gates (God damn)<br>
+
+                                [Verse 1]<br>
+                                Great, eliminate like ElimiDate (Ooh)<br>
+                                Hey, young boy had to penetrate (Ooh)<br>
+                                Face, young boy done caught a case (Ooh)<br>
+                                Bang, now his mama livin' with the pain (Uh)<br>
+                                Wait, doctor says he's gonna stay (Huh?)<br>
+                                Let him get the Senzu Bean so he regenerate (Oh)<br>
+                                Now a nigga harder than the head of the state (damn)<br>
+                                Denzel Curry is the new candidate (Damn)<br>
+                                Ultimate, alternate, you are the opposite<br>
+                                Stop this shit, chop your esophagus (Esophagus)<br>
+                                Bitches be boppin' it, bow down and pop it in<br>
+                                Droppin' it in her esophagus (Esophagus)<br>
+                                She get so nasty, in public she classy<br>
+                                Perhaps she is able to swallow it (Uh)<br>
+                                Girl, I can make you a star (Star, ooh)<br>
+                                Then I put her ass on Apollo, bitch (Damn)<br>
+                                Bitch, I am ultimate, behold my awesomeness<br>
+                                Narcissist, part time an arsonist (Flame)<br>
+                                Rippin' through cartilage, I am the hardest, bitch<br>
+                                Wrap it up, put in sarcophagus (Damn)<br>
+                                Dearly departed, it's done when it started<br>
+                                So now that I'm livin' so harmonious (Harmonious)<br>
+                                Feelin' like Spartacus, Curry the ultimate<br>
+                                I am the best, there's no politics<br>
+                                Bitch, I'm ultimate<br>
+                                Ultimate<br>
+                                Bitch, I'm<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <br>
+                <br>
+                <br>
+                <audio src="music/Sick.mp3" controls></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

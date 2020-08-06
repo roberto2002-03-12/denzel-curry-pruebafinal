@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Contrato</title>
+    <link rel="stylesheet" href="css/estilo3.css">
+</head>
+<body>
+    <div class="container-fluid"> <!--primer contenedor-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!--navbar-dark: cuando es de color negro el fondo, se va a ver blanco-->
+            <h1 class="navbar-brand" ><font size="6">Denzel Curry $</font></h1> <!--use font para cambiar el tamaño de letra, ya que en css no me dejaba-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="boton">
+              <span class="navbar-toggler-icon" id="botonicon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><font color="white" size="4">Home</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index2.html"><font color="white" size="4">Playlist</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index3.html"><font color="white" size="4">Contrato</font></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://denzel-curry-12032002.blogspot.com/" target="_blank"><font color="white" size="4">Blog</font></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" id="fondo">
+        <br><br><br><br>
+        <form action="#" method="POST" class="formulario" id="formulario">
+            <!--Linea 1-->
+            <div class="row">
+                <!--Nombre-->
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" align="center">
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingresar Nombre" maxlength="20">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Debe tener como minimo 3 a 20 caracteres, no se permiten números.</p>
+                    </div>
+                </div>
+
+                <!--Apellido-->
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12" align="center">
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingresar Apellido" maxlength="32">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Debe tener como minimo 3 a 32 caracteres, no se permiten números.</p>
+                    </div>
+                </div>
+
+                <!--Edad-->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12" align="center">
+                    <div class="formulario__grupo" id="grupo__edad">
+                        <label for="edad" class="formulario__label">Edad</label>
+                        <div class="formulario__grupo-input">
+                            <input type="date" class="formulario__input" name="edad" id="edad" placeholder="EDAD" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Debe ser mayor de edad</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--Linea 2-->
+            <div class="row">
+                <!--Correo-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" align="center">
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@correo.com" maxlength="32">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Debe tener "@", nombre del correo y ".com"</p>
+                    </div>
+                </div>
+                <!--Número de telefono-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" align="center">
+                    <div class="formulario__grupo" id="grupo__numero">
+                        <label for="numero" class="formulario__label">Número de Telefono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="numero" id="numero" placeholder="Ingresar Número" maxlength="12" onkeypress="return validaNumericos(event)">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Debe tener como minimo 6 caracteres</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--Linea 3-->
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" align="center">
+                    <table align="center">
+                        <tr>
+                            <td>Sexo</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="genero" value="masculino" required> Masculino</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="genero" value="femenino" required> Femenino</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" align="center">
+                    <table align="center">
+                        <tr>
+                            <td>Nivel (opcional)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="sin-estudio" value="1" class="only-one"> Agente <br><input type="checkbox" name="tecnico" value="2" class="only-one"> Rapero <br><input type="checkbox" name="universitario" value="3" class="only-one"> Director Estudio</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <br>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" align="center">
+                    <table align="center">
+                        <tr>
+                            <td>País</td>
+                        </tr>
+                        <tr>
+                            <td><select name="pais" id="pais" required>
+                                <option>USA</option>
+                                <option>Canada</option>
+                                <option>Mexico</option>
+                                <option>Perú</option>
+                                <option>Colombia</option>
+                                <option>Brazil</option>
+                                <option>Paraguay</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" align="center">
+                    <h2>Convertidor</h2>
+                    <iframe width="175" height="202" id="themoneyconverter-mini" src="https://themoneyconverter.com/ES/MoneyConverter?from=EUR&amp;to=USD" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" seamless="seamless"></iframe>
+                    <br>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" align="center">
+                    <h2>Oferta inicial(opcional)</h2>
+                    <input type="number" name="cantidad" id="cantidad" min="10000">
+                </div>
+            </div>
+            <br>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene el formulario como debe ser</p>
+            </div>
+            <br>
+
+            <h2>Mensaje</h2>
+            <div class="row">
+                <div class="input-group mb-3 col-xl-8" align="center" id="mensajeria">
+                    <div class="input-group-prepend">
+                        <!--input-group-text, hace que se pegue una imagen al input(algoritmo que debe escribir el usuario)-->
+                        <i class="Nombre de imagen input-group-text"></i>
+                    </div>
+                    <textarea name="" id="" cols="25" rows="8" class="form-control" required></textarea>
+                </div>
+            </div>
+            <!--formulario__mensaje-exito-activo-->
+            <br><br>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado</p>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/codigo2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

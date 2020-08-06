@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Barra navegadora*/
+
+nav{
+    background-color: black;
+}
+
+nav h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+nav a:hover{/*hover: al pasar el mouse realice una acción, en este caso que cambie de color*/
+    background-color: orange;
+}
+
+nav a{
+    color: white;
+}
+
+/*Video*/
+
+#background-img{
+    background-color: black;
+    width: 100%;
+}
+
+#video {
+    align-items: center;
+    overflow: hidden;
+}
+
+#video video{
+    width: 80%;
+}
+
+/*texto, videos e imagenes*/
+
+/*fondo*/
+
+#fondo {
+    background-color: whitesmoke;
+}
+
+/**/
+
+h2 {
+    font-size: 40px;
+}
+
+audio {
+    font-size: 200px;
+}
+
+#lyrics {
+    margin-top: 40px;
+}
